@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css" >
+
+<head> 
+
+<title> Your Song! </title> 
+
+</head>
+
+<body>
+<nav class="navbar-default">
+  <div class="container-fluid">
+    
+    <div>
+      <ul class="nav navbar-nav">
+        <li><a href=".">Home</a></li>
+        <li><a href="javascript:window.location.href=window.location.href">Another song!</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<h1> This seems like a good song! </h1>
+
+<h1> <%= @song  %> by <%= @related_artist_views %> </h1>
+
+<h1> <audio controls
+  src= <%= @song_play %> >
+Your user agent does not support the HTML5 Audio element
+</audio> </h1>
+<h1>  <img src="<%= @image %>" height="400" width="400" > </h1>
+
+</body>
+
+
+</html>
